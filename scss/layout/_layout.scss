@@ -9,3 +9,14 @@ section {
   min-width:500px;
   margin:0 auto;
 }
+
+.core-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@include respond-to(large) {
+    .core-content {
+        flex-direction: row;
+    }
+}
