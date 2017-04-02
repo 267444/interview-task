@@ -19,10 +19,6 @@ table#hero-list {
     padding-bottom: 10px;
   }
 
-  th:first-child {
-    text-indent: 100px
-  }
-
   th.sortable a {
     background: url(/img/order-sprite.png) no-repeat 0 8px;
     text-indent: -1000px;

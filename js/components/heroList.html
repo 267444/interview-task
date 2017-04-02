@@ -2,8 +2,8 @@
     <thead>
     <tr>
         <th></th>
-        <th class="sortable">Hero <a href="#" ng-class="'sort-' + $ctrl.sortingDirection" ng-click="$ctrl.sortByName($ctrl.sortingDirection)">sort</a></th>
-        <th class="sortable">Team <a href="#" ng-class="'sort-' + $ctrl.sortingDirection" ng-click="$ctrl.sortByName($ctrl.sortingDirection)">sort</a></th>
+        <th class="sortable">Hero <a href="#" ng-class="'sort-' + (($ctrl.sortingType === 'heroName')?$ctrl.sortingDirection:'')" ng-click="$ctrl.sortByName($ctrl.sortingDirection)">sort</a></th>
+        <th class="sortable">Team <a href="#" ng-class="'sort-' + (($ctrl.sortingType === 'teamName')?$ctrl.sortingDirection:'')" ng-click="$ctrl.sortByTeam($ctrl.sortingDirection)">sort</a></th>
         <th>Best rating</th>
         <th>Compare</th>
     </tr>

@@ -10,7 +10,9 @@
                 vm.$onInit = function () {
                     vm.heroes = [];
                     vm.sortingDirection = '';
+                    vm.sortingType = '';
                     vm.sortByName = sortByName;
+                    vm.sortByTeam = sortByTeam;
                 };
 
                 activate();
@@ -41,20 +43,27 @@
                 }
 
                 function sortByName(direction) {
-                    if (!direction || direction == "down") {
+                    sortByType(direction, 'heroName');
+                }
+                
+                function sortByTeam(direction) {
+                    sortByType(direction, 'teamName');
+                }
+                
+                function sortByType(direction, type) {
+                    if (!direction || direction == "down" || vm.sortingType !== type) {
                         vm.sortingDirection = 'up';
                         vm.heroes = vm.heroes.sort(function (a, b) {
-                            return a.heroName.localeCompare(b.heroName);
+                            return a[type].localeCompare(b[type]);
                         });
                         vm.heroes.reverse();
-                    }
-
-                    if (direction == 'up') {
+                    } else {
                         vm.sortingDirection = 'down';
                         vm.heroes = vm.heroes.sort(function (a, b) {
-                            return a.heroName.localeCompare(b.heroName);
+                            return a[type].localeCompare(b[type]);
                         });
                     }
+                    vm.sortingType = type;
                 }
             }
         });
