@@ -9,7 +9,7 @@ table#hero-list {
     text-transform: lowercase;
 
 
-    vertical-align: top;
+    vertical-align: middle;
     padding-right:30px
   }
 
@@ -17,6 +17,7 @@ table#hero-list {
     font-family: 'LatoBold', Lato, arial, sans-serif;
     line-height: 40px;
     padding-bottom: 10px;
+    white-space: nowrap;
   }
 
   th.sortable a {
@@ -80,7 +81,6 @@ table#hero-list {
 
     th:first-child {
       text-indent: 50px;
-      min-width: 120px;
     }
 
     th:nth-child(2) {
