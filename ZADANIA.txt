@@ -1,0 +1,10 @@
+**Zanim zaczniesz, ustaw i uruchom projekt zgodnie z plikiem INSTRUKCJA.txt** 
+
+# Zadanie #1 (bug)
+Dodaliśmy ikony na liście bohaterów, ale pojawił się problem z wyrównaniem w pionie. Napraw proszę tak, by wszystkie elementy w wierszu były wyrównane względem siebie w pionie.
+
+# Zadanie #2 (feature)
+Chcielibyśmy wykorzystać przestrzeń na dużych ekranach. Ustaw proszę sekcje "the heroes" i "comparison" obok siebie, gdy szerokość ekranu przekroczy 1200px. Zastosuj podejście, które Ci najbardziej odpowiada. Chętnie przeczytamy uwagi dlaczego. Możesz użyć swoich ulubionych bibliotek.
+
+# Zadanie #3 (bug)
+Coś jest nie tak z sortowaniem. Zbadaj proszę sprawę i napraw wszystkie problemy, które znajdziesz. 

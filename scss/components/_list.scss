@@ -1,0 +1,126 @@
+
+table#hero-list {
+  font-size: 1.8em;
+  margin-left:100px;
+  font-family: 'LatoLight', Lato, arial, sans-serif;
+
+  th, td {
+    text-align: left;
+    text-transform: lowercase;
+
+
+    vertical-align: top;
+    padding-right:30px
+  }
+
+  th {
+    font-family: 'LatoBold', Lato, arial, sans-serif;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+
+  th:first-child {
+    text-indent: 100px
+  }
+
+  th.sortable a {
+    background: url(/img/order-sprite.png) no-repeat 0 8px;
+    text-indent: -1000px;
+    display: inline-block;
+    width: 14px
+  }
+
+  th.sortable a:hover {
+    background-position: 0 -42px;
+  }
+
+  th.sortable a.sort-down {
+    background-position: 0 -92px;
+  }
+
+  th.sortable a.sort-up {
+    background-position: 0 -142px;
+  }
+
+  td {
+    line-height: 80px;
+    height:100px;
+  }
+
+  td[class^="icon"]:before {
+    width:60px;
+    display: inline-block;
+    background: #fff;
+    height: 60px;
+    border-radius: 100px;
+    font-size: 60px;
+    padding:10px;
+    margin-right: 20px;
+    line-height:60px;
+    transition: width 0.1s, height 0.1s, padding 0.1s, font-size 0.1s, color 0.2s, line-height 0.1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  tr:hover td[class^="icon"]:before {
+    padding:0;
+    font-size:80px;
+    width:80px;
+    height:80px;
+    color:#3498db;
+    line-height:60px;
+  }
+
+  tr:hover td {
+    color:#3498db;
+  }
+
+  @include respond-to ('medium') {
+    font-size: 1em;
+
+    td {
+      line-height: 40px;
+      height:50px;
+    }
+
+    th:first-child {
+      text-indent: 50px;
+      min-width: 120px;
+    }
+
+    th:nth-child(2) {
+      min-width: 60px;
+    }
+
+    td[class^="icon"]:before {
+      width:30px;
+      display: inline-block;
+      background: #fff;
+      height: 30px;
+      border-radius: 50px;
+      font-size: 30px;
+      padding:5px;
+      margin-right: 10px;
+      line-height:30px;
+      transition: width 0.1s, height 0.1s, padding 0.1s, font-size 0.1s, color 0.2s, line-height 0.1s;
+      transition-timing-function: ease-in-out;
+    }
+
+    tr:hover td[class^="icon"]:before {
+      padding:0;
+      font-size:40px;
+      width:40px;
+      height:40px;
+      color:#3498db;
+      line-height:30px;
+    }
+
+  }
+
+  .hero-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+}

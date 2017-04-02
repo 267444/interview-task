@@ -1,0 +1,19 @@
+<table id="hero-list" description="All available heroes">
+    <thead>
+    <tr>
+        <th class="sortable">Hero <a href="#" ng-class="'sort-' + $ctrl.sortingDirection" ng-click="$ctrl.sortByName($ctrl.sortingDirection)">sort</a></th>
+        <th class="sortable">Team <a href="#" ng-class="'sort-' + $ctrl.sortingDirection" ng-click="$ctrl.sortByName($ctrl.sortingDirection)">sort</a></th>
+        <th>Best rating</th>
+        <th>Compare</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="hero in $ctrl.heroes">
+            <td><img src="/img/user.png" class="hero-icon"/>{{hero.formatName()}}</td>
+            <td>{{hero.teamName}}</td>
+            <td>{{hero.getHighestRating()}}</td>
+            <td><input name="compare[]" type="checkbox" value="{{hero.heroName}}"></td>
+        </tr>
+    </tbody>
+
+</table>

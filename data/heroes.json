@@ -1,0 +1,32 @@
+[
+    {
+        "name": "superman",
+        "team": "DC",
+        "attributes": {
+            "speed": 46,
+            "strength": 99,
+            "intelligence": 69
+        },
+        "enabled": true
+    }, 
+    {
+        "name": "batman",
+        "team": "DC",
+        "attributes": {
+            "speed": 53,
+            "strength": 23,
+            "intelligence": 99
+        },
+        "enabled": true
+    }, 
+    {
+        "name": "spiderman",
+        "team": "marvel",
+        "attributes": {
+            "speed": 74,
+            "strength": 81,
+            "intelligence": 14
+        },
+        "enabled": true
+    }
+]

@@ -1,0 +1,41 @@
+# Witamy w zadaniu rekrutacyjnym
+
+Stworzyliśmy fikcyjną stronę, która pomoże nam ocenić Twoje umiejętności. Nie zostanie nigdy opublikowana, posłuży tylko na potrzeby rekrutacji. Skupia się na HTML, JavaScript (Angular JS) i SCSS. Możesz dołączyć i używać dowolnych task-runner'ów i pakietów npm, które uznasz za przydatne.
+
+
+# Zadania
+
+W pliku ZADANIA.txt znajdziesz 3 zadania. Poświęć proszę 2-3 godziny próbując je rozwiązać najlepiej jak potrafisz. Jeżeli przekroczysz ten czas, możesz kontynuować, lub wypunktować swoje dalsze podejscie do sprawy. Jeżeli utkniesz, sugerujemy przejście dalej. Chętnie przeczytamy wszelkie uwagi, które dołączysz. 
+
+
+# Jak zacząć pracę nad projektem
+
+Będziesz potrzebować menadżera pakietów npm, który jest częścią [Node.js](https://nodejs.org/en/download/). Zainstaluj Node.js, upewniając się, że zaznaczone są opcje "npm package manager" i "Add to PATH".
+
+Poniżej masz przykład jak zbudować i uruchomić projekt, zakładając, że jest w folderze C:\www\zadanie
+
+cd C:\www\zadanie
+npm install
+npm run build
+npm start # uruchomi serwer i pokaże Ci adres, jaki wpisać do przeglądarki by zobaczyć stronę
+
+By zobaczyć zmiany wprowadzone w kodzie, musisz po każdej zmianie uruchomić
+
+npm run build
+
+
+# Przydatne taski
+
+npm run watch # będzie nasłuchiwać zmian w plikach js i scss i odpali taska 'build' automatycznie
+npm run lint # uruchomi sprawdzenie stylu w katalogu 'js' 
+npm run test # odpali testy w katalogu 'js' (jeżeli używasz testów)
+
+**Uwaga:** Pamiętaj, że możesz uruchomić kilka terminali (serwer i watch zajmują dany terminal gdy działają).
+
+# Informacje
+
+Najchętniej odbierzemy zadanie jako link do repozytorium gita, byśmy mogli zobaczyć Twoje commity. Docenimy regularne commity z czytelnymi opisami po angielsku. Będziemy wdzięczni za kod i komentarze w kodzie po angielsku. Wszelkie dodatkowe uwagi poza kodem chętnie przeczytamy po polsku. Gdy skończysz zadanie, skontaktuj się z rekruterem.
+
+**Uwaga:** Jeżeli z jakegoś powodu nie pasuje Ci git, to odeślij zadanie w pliku .zip  (tylko nie dołączaj do niego katalogu /node_modules )
+
+Dziękujemy za poświęcony czas i powodzenia!
